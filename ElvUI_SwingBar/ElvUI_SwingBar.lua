@@ -89,7 +89,7 @@ function UF:Configure_Swingbar(frame)
 			Bar.bg:SetVertexColor(color.r * 0.35, color.g * 0.35, color.b * 0.35)
 
 			Bar:SetOrientation(db.verticalOrientation and "VERTICAL" or "HORIZONTAL")
-
+			Bar:SetFrameStrata("BACKGROUND")
 			if db.spark then
 				if db.verticalOrientation then
 					if Bar == swingbar.Twohand then
